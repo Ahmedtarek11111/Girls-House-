@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Girls'House 🎀 | متجر الأناقة النسائية</title>
+<meta name="description" content="Girls'House - وجهتك للأزياء النسائية الراقية: ملابس، حقائب، ملابس سباحة وإكسسوارات بلمسة عصرية وأنيقة." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <span class="loader-logo">Girls'House 🎀</span>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Announcement -->
+<div class="announce">
+  <div class="marquee">
+    <span>✨شحن 120 ج.م  &nbsp; • &nbsp; خصم 20% على المجموعة الجديدة &nbsp; • &nbsp; دفع عند الاستلام &nbsp; • &nbsp; توصيل لجميع المحافظات &nbsp;</span>
+    <span>✨ شحن 120 ج.م &nbsp; • &nbsp; خصم 20% على المجموعة الجديدة &nbsp; • &nbsp; دفع عند الاستلام &nbsp; • &nbsp; توصيل لجميع المحافظات &nbsp;</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container nav">
+    <button class="icon-btn mobile-only" id="menuBtn" aria-label="القائمة"><i class="fas fa-bars"></i></button>
+    <a href="index.html" class="logo">Girls'House <span>🎀</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="categories.html">التسوق</a>
+      <a href="categories.html?cat=clothes">الملابس</a>
+      <a href="categories.html?cat=bags">الحقائب</a>
+      <a href="categories.html?cat=swim">السباحة</a>
+     <a href="categories.html?cat=accessories">الإكسسوارات</a> 
+      <a href="about.html">عنّا</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+    <div class="nav-icons">
+      <button class="icon-btn" id="searchBtn" aria-label="بحث"><i class="fas fa-search"></i></button>
+      <button class="icon-btn" id="wishBtn" aria-label="المفضلة">
+        <i class="fas fa-heart"></i><span class="badge" id="wishCount">0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="السلة">
+        <i class="fas fa-shopping-bag"></i><span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+  <!-- Search drawer -->
+  <div class="search-drawer" id="searchDrawer">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="ابحثي عن منتج..." />
+      <button class="icon-btn" id="closeSearch"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="container search-results" id="searchResults"></div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">مجموعة صيف 2026</span>
+    <h1>أناقتك تبدأ من <span class="accent">Girls'House</span></h1>
+    <p>اكتشفي تشكيلة فاخرة من الملابس والإكسسوارات المصمّمة خصيصاً لتُبرز جمالك الفريد.</p>
+    <div class="hero-actions">
+      <a href="categories.html" class="btn btn-primary">تسوّقي الآن</a>
+      <a href="about.html" class="btn btn-outline">قصتنا</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features strip -->
+<section class="features container">
+  <div class="feature"><i class="fas fa-truck"></i><div><h4>شحن سريع</h4><p>لكل المحافظات</p></div></div>
+  <div class="feature"><i class="fas fa-money-bill-wave"></i><div><h4>دفع عند الاستلام</h4><p>آمن وسهل</p></div></div>
+  <div class="feature"><i class="fas fa-undo"></i><div><h4>إرجاع خلال 2 يوم</h4><p>دون أي قلق</p></div></div>
+  <div class="feature"><i class="fas fa-headset"></i><div><h4>دعم 24/7</h4><p>عبر واتساب</p></div></div>
+</section>
+
+<!-- Categories -->
+<section class="section container">
+  <div class="section-head">
+    <span class="eyebrow">تسوّقي حسب الفئة</span>
+    <h2>الفئات</h2>
+  </div>
+  <div class="cat-grid">
+    <a href="categories.html?cat=clothes" class="cat-card" style="--img:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900')">
+      <div class="overlay"></div><h3>الملابس</h3>
+    </a>
+    <a href="categories.html?cat=bags" class="cat-card" style="--img:url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=900')">
+      <div class="overlay"></div><h3>الحقائب</h3>
+    </a>
+    <a href="categories.html?cat=swim" class="cat-card" style="--img:url('https://images.unsplash.com/photo-1570976447640-ac859a217f15?w=900')">
+      <div class="overlay"></div><h3>ملابس السباحة</h3>
+    </a>
+    <a href="categories.html?cat=accessories" class="cat-card" style="--img:url('https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900')">
+      <div class="overlay"></div><h3>الإكسسوارات</h3>
+    </a>
+  </div>
+</section>
+
+<!-- New arrivals -->
+<section class="section container">
+  <div class="section-head">
+    <span class="eyebrow">وصل حديثاً</span>
+    <h2>المجموعة الجديدة</h2>
+  </div>
+  <div class="product-grid" id="newArrivals"></div>
+</section>
+
+<!-- Banner -->
+<section class="promo-banner">
+  <div class="container">
+    <span class="eyebrow light">عرض محدود</span>
+    <h2>خصم يصل إلى 30%</h2>
+    <p>على تشكيلة مختارة من الفساتين والحقائب — لفترة محدودة فقط.</p>
+    <a href="categories.html" class="btn btn-light">تسوّقي العرض</a>
+  </div>
+</section>
+
+<!-- Best sellers -->
+<section class="section container">
+  <div class="section-head">
+    <span class="eyebrow">الأكثر مبيعاً</span>
+    <h2>المفضلة لديكنّ</h2>
+  </div>
+  <div class="product-grid" id="bestSellers"></div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <h2>انضمي إلى عائلة Girls'House</h2>
+    <p>اشتركي لتصلك أحدث المجموعات والعروض الحصرية.</p>
+    <form id="newsletterForm" class="news-form">
+      <input type="email" required placeholder="بريدك الإلكتروني" />
+      <button class="btn btn-primary" type="submit">اشتراك</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3 class="logo">Girls'House <span>🎀</span></h3>
+      <p>وجهتك للأزياء النسائية الراقية والإطلالات العصرية الأنيقة.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="categories.html">المنتجات</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>خدمة العملاء</h4>
+      <ul>
+        <li><a href="#">سياسة الشحن</a></li>
+        <li><a href="#">الإرجاع والاستبدال</a></li>
+        <li><a href="#">دليل المقاسات</a></li>
+        <li><a href="#">الأسئلة الشائعة</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>تواصلي معنا</h4>
+      <ul>
+        <li><i class="fas fa-phone"></i> 01000000000</li>
+        <li><i class="fas fa-envelope"></i> hello@girlshouse.com</li>
+        <li><i class="fas fa-map-marker-alt"></i> القاهرة، مصر</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Girls'House 🎀 — جميع الحقوق محفوظة</div>
+</footer>
+
+<!-- Floating actions -->
+<a href="https://wa.me/201000000000" class="fab whatsapp" target="_blank" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+<button class="fab scroll-top" id="scrollTop" aria-label="للأعلى"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Quick view modal -->
+<div class="modal" id="quickModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
