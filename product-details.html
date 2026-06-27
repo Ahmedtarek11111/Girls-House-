@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>تفاصيل المنتج | Girls'House 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="loader" id="loader"><div class="loader-inner"><span class="loader-logo">Girls'House 🎀</span><div class="loader-bar"><span></span></div></div></div>
+
+<div class="announce"><div class="marquee"><span>✨ شحن 120 ج.م &nbsp;</span><span>✨ شحن 120 ج.م &nbsp;</span></div></div>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <button class="icon-btn mobile-only" id="menuBtn"><i class="fas fa-bars"></i></button>
+    <a href="index.html" class="logo">Girls'House <span>🎀</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">الرئيسية</a>
+      <a href="categories.html">التسوق</a>
+      <a href="about.html">عنّا</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+    <div class="nav-icons">
+      <button class="icon-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+      <button class="icon-btn" id="wishBtn"><i class="fas fa-heart"></i><span class="badge" id="wishCount">0</span></button>
+      <button class="icon-btn" id="cartBtn"><i class="fas fa-shopping-bag"></i><span class="badge" id="cartCount">0</span></button>
+    </div>
+  </div>
+  <div class="search-drawer" id="searchDrawer">
+    <div class="container"><input type="text" id="searchInput" placeholder="ابحثي..." /><button class="icon-btn" id="closeSearch"><i class="fas fa-times"></i></button></div>
+    <div class="container search-results" id="searchResults"></div>
+  </div>
+</header>
+
+<section class="container breadcrumb">
+  <a href="index.html">الرئيسية</a> / <a href="categories.html">المنتجات</a> / <span id="bcName">المنتج</span>
+</section>
+
+<section class="container product-page" id="productPage">
+  <!-- Filled by JS -->
+</section>
+
+<section class="section container">
+  <div class="section-head"><span class="eyebrow">قد يعجبك أيضاً</span><h2>منتجات مشابهة</h2></div>
+  <div class="product-grid" id="related"></div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><h3 class="logo">Girls'House <span>🎀</span></h3><p>وجهتك للأزياء النسائية الراقية.</p>
+      <div class="socials"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div>
+    </div>
+    <div><h4>روابط</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li></ul></div>
+    <div><h4>خدمة</h4><ul><li><a href="#">الشحن</a></li><li><a href="#">الإرجاع</a></li></ul></div>
+    <div><h4>تواصلي</h4><ul><li><i class="fas fa-phone"></i> 01010288791</li></ul></div>
+  </div>
+  <div class="copyright">© 2026 Girls'House 🎀</div>
+</footer>
+
+<a href="https://wa.me/201010288791" class="fab whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<button class="fab scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
